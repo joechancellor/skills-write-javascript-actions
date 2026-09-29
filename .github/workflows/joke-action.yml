@@ -2,6 +2,8 @@ name: Joke Action
 run-name: Dad Joke for issue ${{ github.event.issue.number }} by ${{ github.event.comment.user.login }}
 
 on:
+ issues:
+   types: opened
  issue_comment:
    types: [created]
 
